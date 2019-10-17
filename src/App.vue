@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MessagePush></MessagePush>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MessagePush from '../pluginPackage/messagePush/src/main'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MessagePush
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: 'iconfont';  /* project id 543982 */
+  src: url('//at.alicdn.com/t/font_543982_njbsq191y2.eot');
+  src: url('//at.alicdn.com/t/font_543982_njbsq191y2.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_543982_njbsq191y2.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_543982_njbsq191y2.woff') format('woff'),
+  url('//at.alicdn.com/t/font_543982_njbsq191y2.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_543982_njbsq191y2.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
 }
 </style>
