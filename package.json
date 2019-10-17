@@ -1,7 +1,10 @@
 {
   "name": "notification",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "private": false,
+  "author":"caixia",
+  "main": "./lib/web-plugin.umd.min.js",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
